@@ -31,7 +31,7 @@ img {
   grid-template-areas:
     "title ."
     ". emblem"
-    "date coming";
+    "coming date";
   position: relative;
 }
 
@@ -61,8 +61,8 @@ img {
 
 .emblem-inner {
   position: relative;
-  width: clamp(260px, 22vw, 320px);
-  height: clamp(260px, 22vw, 320px);
+  width: clamp(260px, 50vw, 400px);
+  height: clamp(260px, 50vw, 400px);
 }
 
 .emblem-inner img.vector {
@@ -86,21 +86,22 @@ img {
 .date-block {
   grid-area: date;
   align-self: end;
+  text-align: right;
   margin-bottom: 20px;
 }
 
 .date-block img {
   width: clamp(260px, 20vw, 300px);
   height: auto;
-  display: block;
+  display: inline-block;
 }
 
 /* 近日公開 */
 .coming-block {
   grid-area: coming;
   align-self: end;
-  text-align: right;
-  margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .coming-block img {
@@ -108,6 +109,7 @@ img {
   height: auto;
   display: inline-block;
 }
+
 
 
 /* ========== MOBILE ========== */
@@ -120,55 +122,53 @@ img {
     min-height: 100svh;
   }
 
-  /* タイトル */
+  /* タイトル：左上固定 */
   .title-block {
     position: fixed;
-    left: 0;
+    top: 20px;
+    left: 20px;
     right: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .title-block img {
-    width: 220px;
-    margin: 0 auto;
+    width: clamp(200px, 55vw, 260px);
   }
 
-  /* エンブレム */
+  /* エンブレム：画面中央固定 */
   .emblem-block {
     width: 100%;
     justify-content: center;
   }
 
   .emblem-inner {
-    width: clamp(100px, 40vw, 180px);
-    height: clamp(100px, 40vw, 180px);
+    width: clamp(180px, 55vw, 300px);
+    height: clamp(180px, 55vw, 300px);
   }
 
   /* 日付 */
   .date-block {
     position: fixed;
-    bottom: 120px;
-    left: 0;
-    right: 0;
-    text-align: center;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
   }
 
   .date-block img {
-    width: 220px;
-    margin: 0 auto;
+    width: clamp(140px, 40vw, 200px);
+    height: auto;
   }
 
-  /* 近日公開 */
+  /* 近日公開：左下固定 */
   .coming-block {
     position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
+    bottom: 10px;
+    left: 20px;
+    text-align: left;
   }
 
   .coming-block img {
-    width: 220px;
-    margin: 0 auto;
+    width: 150px;
   }
+
 }
