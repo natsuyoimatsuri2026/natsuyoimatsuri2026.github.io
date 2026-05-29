@@ -108,23 +108,24 @@ body {
   .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 32px;
     min-height: 100svh;
   }
 
   .title-block {
     position: fixed;
-    margin-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .title-block img {
-    width: 100%;
+    width: 220px;
+    margin: 0 auto;
   }
 
   .emblem-block {
     width: 100%;
-    margin-bottom: 52px;
     justify-content: center;
   }
 
@@ -135,20 +136,26 @@ body {
 
   .date-block {
     position: fixed;
-    bottom: 120px;
-
+    bottom: 140px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .date-block img {
-    width: 100%;
+    width: 220px;
+    margin: 0 auto;
   }
 
   .coming-block {
     position: fixed;
     bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   .coming-block img {
-    width: 100%;
+    width: 220px;
   }
 }
