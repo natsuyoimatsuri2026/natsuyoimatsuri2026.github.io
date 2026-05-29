@@ -42,7 +42,7 @@ img {
 }
 
 .title-block img {
-  width: clamp(320px, 24vw, 480px);
+  width: clamp(300px, 24vw, 480px);
   height: auto;
   display: block;
 }
@@ -116,7 +116,7 @@ img {
   .page {
     display: flex;
     flex-direction: column;
-    padding: 32px;
+    padding: 20px;
     min-height: 100svh;
   }
 
@@ -129,7 +129,7 @@ img {
   }
 
   .title-block img {
-    width: 220px;
+    width: 200px;
     margin: 0 auto;
   }
 
@@ -147,14 +147,14 @@ img {
   /* 日付 */
   .date-block {
     position: fixed;
-    bottom: 130px;
+    bottom: 120px;
     left: 0;
     right: 0;
     text-align: center;
   }
 
   .date-block img {
-    width: 220px;
+    width: 200px;
     margin: 0 auto;
   }
 
@@ -168,7 +168,7 @@ img {
   }
 
   .coming-block img {
-    width: 220px;
+    width: 200px;
     margin: 0 auto;
   }
 }
