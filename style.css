@@ -42,7 +42,7 @@ img {
 }
 
 .title-block img {
-  width: clamp(320px, 24vw, 480px);
+  width: clamp(280px, 24vw, 480px);
   height: auto;
   display: block;
 }
@@ -90,7 +90,7 @@ img {
 }
 
 .date-block img {
-  width: clamp(260px, 20vw, 300px);
+  width: clamp(160px, 18vw, 300px);
   height: auto;
   display: block;
 }
@@ -104,71 +104,9 @@ img {
 }
 
 .coming-block img {
-  width: clamp(240px, 20vw, 400px);
+  width: clamp(220px, 20vw, 400px);
   height: auto;
   display: inline-block;
 }
 
 
-/* ========== MOBILE ========== */
-
-@media (max-width: 600px) {
-  .page {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    min-height: 100svh;
-  }
-
-  /* タイトル */
-  .title-block {
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .title-block img {
-    width: 220px;
-    margin: 0 auto;
-  }
-
-  /* エンブレム */
-  .emblem-block {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .emblem-inner {
-    width: clamp(100px, 40vw, 180px);
-    height: clamp(100px, 40vw, 180px);
-  }
-
-  /* 日付 */
-  .date-block {
-    position: fixed;
-    bottom: 120px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .date-block img {
-    width: 220px;
-    margin: 0 auto;
-  }
-
-  /* 近日公開 */
-  .coming-block {
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .coming-block img {
-    width: 220px;
-    margin: 0 auto;
-  }
-}
