@@ -114,13 +114,12 @@ body {
   }
 
   .title-block {
-    align-self: stretch;
+    position: fixed;
     margin-bottom: 40px;
   }
 
   .title-block img {
-    width: 80%;
-    max-width: 260px;
+    width: 100%;
   }
 
   .emblem-block {
@@ -136,13 +135,12 @@ body {
 
   .date-block {
     position: fixed;
-    bottom: 160px;
+    bottom: 120px;
 
   }
 
   .date-block img {
-    width: 260px;
-    max-width: 300px;
+    width: 100%;
   }
 
   .coming-block {
@@ -151,7 +149,6 @@ body {
   }
 
   .coming-block img {
-    width: 260px;
-    max-width: 300px;
+    width: 100%;
   }
 }
